@@ -1,0 +1,36 @@
+html{
+  background: black;
+}
+.wrapper {
+  width: 100%;
+  top:0px;
+  bottom:0px;
+  background: black;
+  perspective: 100px;
+}
+
+.text-wrapper {
+  margin: auto;
+  height: 100%;
+  width: 40%;
+  text-align: center;
+  animation: star-wars 45s infinite ease-in-out both;
+}
+
+span {
+  margin: auto;
+  text-align: justify;
+  color: yellow;
+  display: flex;
+  height:100%;
+  font-size: 24px;
+}
+
+@keyframes star-wars {
+  from {
+    transform: rotateX(20deg) translateY(180px);
+  }
+  to {
+    transform: rotateX(20deg) translateY(-200%)
+  }
+}
